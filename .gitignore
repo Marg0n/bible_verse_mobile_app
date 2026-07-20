@@ -1,43 +1,62 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-preload
 
-# dependencies
-node_modules/
+# Generated files
+**/generated_plugin_registrant.dart
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
 
-# Native
-.kotlin/
-*.orig.*
+# VS Code
+.vscode/
+
+# Android
+.gradle/
+android/.gradle/
+android/local.properties
+android/key.properties
+android/**/build/
+
+# iOS / macOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+macos/Pods/
+macos/Flutter/ephemeral/
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+DerivedData/
+*.xccheckout
+
+# Signing files
 *.jks
-*.p8
+*.keystore
 *.p12
-*.key
 *.mobileprovision
+*.pem
 
-# Metro
-.metro-health-check*
+# Environment files
+.env
+.env.*
+!.env.example
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# Logs
+*.log
 
 # macOS
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-app-example
-
-# generated native folders
-/ios
-/android
